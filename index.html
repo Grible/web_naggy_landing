@@ -1,10 +1,190 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Naggy</title>
-  </head>
-  <body>
-    <h1>Hello world!</h1>    
-  </body>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0; user-scalable=0;">
+	<title>Naggy - Your automated office manager</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="stylesheets/app.css" />
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<style type="text/css">
+		h1,h2,h3,h4,h5,h6 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 600;
+			color: #13062D !important;
+		}
+
+		h3 {
+			font-size: 18px;
+			font-weight: 400;
+		}
+
+		.button.transparent {
+			background-color: #42149F;
+			border: none;
+		}
+		.button.transparent:hover {
+			background-color: #9780C7;
+			color: #FFF;
+		}
+		.banner #logo {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 600;
+			color: #13062D;
+			margin-top: 65px;
+			margin-left: 30px;
+			font-size: 17px;
+			letter-spacing: 3px;
+			text-transform: initial;
+		}
+		.button {
+			background-color: #42149F;
+		}
+		.button:hover, button:focus, .button:hover, .button:focus {
+			background-color: #9780C7;
+		}
+
+		.manifesto {
+			padding: 75px 0;
+		}
+		.popup h1, .popup p {
+			color: #FFF !important;
+			margin-bottom: 50px;
+		}
+	</style>
+</head>
+
+<body>
+  <div class="dimmer hide">
+        <a href="#" class="close-btn-popup"> <img src="img/close-popup.png"/> </a>
+    </div>
+
+    <div class="popup hide">
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+            <h1>Sign up for our private beta</h1>
+            <form action="http://fannily.us8.list-manage.com/subscribe/post?u=b50061f9fe9007e41ae4872f8&amp;id=2015ee875f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div class="mc-field-group">
+                    <input type="email" value="" name="EMAIL" class="required email" placeholder="E-mail" id="mce-EMAIL">
+                </div>
+                <div class="mc-field-group">
+                    <input type="text" value="" name="FNAME" class="" placeholder="First name" id="mce-FNAME">
+                </div>
+                <div class="mc-field-group">
+                    <input type="text" value="" name="LNAME" class="" placeholder="Last name" id="mce-LNAME">
+                </div>
+                <div class="mc-field-group">
+                    <input type="text" value="" name="COMPANY" class="" placeholder="Company" id="mce-COMPANY" placeholder="Company">
+                </div>
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_10c4c48aacb1e2ecab52c00c2_e32cadbd44" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button hide"></div>
+                <a href="#" class="small radius button submit-btn">Sign up</a>
+            </form>
+        </div>
+        <div class="thank-you-message-sign-up hide">
+            <h1>Thanks! You're almost finished...</h1>
+            <p>Please confirm your email address, to complete the subscription process. To do so, please click the link in the email we just sent you.</p>
+        </div>
+        <div class="thank-you-message-confirmation hide">
+            <h1>Welcome to Fannily Beta!</h1>
+            <p>Great to know you're excited about our mission. We'll keep you updated on our product.</p>
+        </div>
+
+        <!--End mc_embed_signup-->
+
+    </div> <!-- End of popup -->
+
+    <div class="container">
+        <div class="banner" style="background-image:url(img/header.jpg)">
+            <div class="row">
+                <div class="">
+                    <a href="/" id="logo" class="lato left">Naggy</a>
+                    <a href="#" class="small radius button sign-up right desktop">Sign up for beta</a>
+                    <div class="clear"></div>
+                </div>
+                <h1>Your virtual office manager</h1>
+                <h3>For the small community and office tasks everyone ‘forgets’ about.</h3>
+                <br/>
+                <a href="#manifesto" class="small radius transparent button scroll">Tell me more</a>
+                <a href="#" class="small radius button sign-up mobile">Sign up for beta</a>
+            </div>
+        </div>
+
+        <div class="row manifesto" name="manifesto" id="manifesto">
+            <div class="large-6 medium-12 small-12 columns illustration mvf">
+                <img src="img/rec-task.png" alt="most valuable followers"/>
+            </div>
+            <div class="large-6 medium-12 small-12 columns">
+                <h1>The hassle of recurring office tasks</h1>
+                <p>You’ll probably know what we mean; giving some love to the vegetation at your office, get all the dishes in the dishwasher, getting some groceries for the team etc. You could probably name a few more. It’s those small recurring tasks nobody really likes but need to be done, preferably in an honest manner, dividing the workload equally.</i>.
+                </p>
+            </div>
+        </div>
+
+        <div class="row discover">
+            <div class="large-6 medium-12 small-12 columns">
+                <h1>Naggy will help you out</h1>
+                <p>No hassle. Just one member that will set-up some recurring tasks and people that should be equally responsible. Naggy will do the rest. It will send text messages to remind people about their responsibilities for tasks at the right time and at the right location.</p>
+            </div>
+            <div class="large-6 medium-12 small-12 columns illustration interests">
+                <img src="img/naggy-webui.png" alt="follower interests" class=""/>
+            </div>
+        </div>
+
+         <div class="row discover">
+            <div class="large-6 medium-12 small-12 columns illustration interests">
+                <img src="img/text.png" alt="follower interests" class=""/>
+            </div>
+            <div class="large-6 medium-12 small-12 columns">
+                <h1>Naggy’s real</h1>
+                <p>Think about that moment when people ask you to take responsibility for some small tasks and both of you feeling a little awkward when that happens. Naggy will help you out. It has some personality, asking you to do stuff with a more positive tone of voice while sometimes being annoyed and asking you to finally take care of that freaking task.</p>
+            </div>
+        </div>
+
+        <div class="outer partners">
+            <div class="row">
+                <div class="large-4 medium-12 columns">
+                    <h1>Beta testers:</h1>
+                </div>
+                <div class="large-8 medium-12 columns brand-logos">
+                    <img src="img/logo-tnw.png">
+                    <img src="img/logo-sf.png">
+                    <img src="img/logo-rs.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="row just-the-start">
+            <h1>Sign up for our beta</h1>
+            <a href="#" class="small radius button sign-up">Sign up for beta</a>
+        </div>
+
+        <div class="outer footer" style="  background-color: #575757; color: #fff">
+            <div class="row">
+                <div class="small-12 columns">
+                    <p style="color: #fff; font-size: 18px; margin-top: 15px; text-align: center;">Naggy was built during The Next Web Hack Battle 2015. Questions? Mail us via hello at grible.co</p>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/foundation.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-37417680-4', 'auto');
+	ga('send', 'pageview');
+
+</script>
 </html>
